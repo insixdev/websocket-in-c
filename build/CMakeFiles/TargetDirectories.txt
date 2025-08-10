@@ -1,3 +1,0 @@
-E:/C/Ejer/build/CMakeFiles/websocket_client.dir
-E:/C/Ejer/build/CMakeFiles/edit_cache.dir
-E:/C/Ejer/build/CMakeFiles/rebuild_cache.dir

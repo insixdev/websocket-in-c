@@ -1,3 +1,0 @@
-D:\LibreriasCpp\cmake\bin\cmake.exe -E rm -f CMakeFiles\websocket_client.dir/objects.a
-D:\Devgame\cppw64dev\w64devkit\bin\ar.exe qc CMakeFiles\websocket_client.dir/objects.a @CMakeFiles\websocket_client.dir\objects1.rsp
-D:\Devgame\cppw64dev\w64devkit\bin\cc.exe -Wl,--whole-archive CMakeFiles\websocket_client.dir/objects.a -Wl,--no-whole-archive -o bin\websocket_client.exe -Wl,--out-implib,libwebsocket_client.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\websocket_client.dir\linkLibs.rsp
