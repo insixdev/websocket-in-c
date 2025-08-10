@@ -10,13 +10,13 @@ CMakeFiles/websocket_client.dir/src/main.c.obj: E:\C\Ejer\src\main.c \
  D:/Devgame/cppw64dev/w64devkit/include/_mingw_off_t.h \
  D:/Devgame/cppw64dev/w64devkit/include/swprintf.inl \
  D:/Devgame/cppw64dev/w64devkit/include/sec_api/stdio_s.h \
- D:/Devgame/cppw64dev/w64devkit/include/math.h \
- D:/Devgame/cppw64dev/w64devkit/include/crtdefs.h \
+ E:/C/Ejer/include/websocket.h \
  E:/vcpkg/installed/x64-windows/include/libwebsockets.h \
  D:/Devgame/cppw64dev/w64devkit/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stdarg.h \
  D:/Devgame/cppw64dev/w64devkit/include/stdarg.h \
  D:/Devgame/cppw64dev/w64devkit/include/_mingw_stdarg.h \
  D:/Devgame/cppw64dev/w64devkit/include/string.h \
+ D:/Devgame/cppw64dev/w64devkit/include/crtdefs.h \
  D:/Devgame/cppw64dev/w64devkit/include/sec_api/string_s.h \
  D:/Devgame/cppw64dev/w64devkit/include/stdlib.h \
  D:/Devgame/cppw64dev/w64devkit/include/corecrt_wstdlib.h \
@@ -407,4 +407,7 @@ CMakeFiles/websocket_client.dir/src/main.c.obj: E:\C\Ejer\src\main.c \
  E:/vcpkg/installed/x64-windows/include/libwebsockets/lws-ssd1306-i2c.h \
  E:/vcpkg/installed/x64-windows/include/libwebsockets/lws-ili9341-spi.h \
  E:/vcpkg/installed/x64-windows/include/libwebsockets/lws-settings.h \
- E:/vcpkg/installed/x64-windows/include/libwebsockets/lws-netdev.h
+ E:/vcpkg/installed/x64-windows/include/libwebsockets/lws-netdev.h \
+ E:/vcpkg/installed/x64-windows/include/pthread.h \
+ E:/vcpkg/installed/x64-windows/include/_ptw32.h \
+ E:/vcpkg/installed/x64-windows/include/sched.h

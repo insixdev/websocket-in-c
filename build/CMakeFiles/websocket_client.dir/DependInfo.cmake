@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/C/Ejer/src/main.c" "CMakeFiles/websocket_client.dir/src/main.c.obj" "gcc" "CMakeFiles/websocket_client.dir/src/main.c.obj.d"
+  "E:/C/Ejer/src/websocket.c" "CMakeFiles/websocket_client.dir/src/websocket.c.obj" "gcc" "CMakeFiles/websocket_client.dir/src/websocket.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

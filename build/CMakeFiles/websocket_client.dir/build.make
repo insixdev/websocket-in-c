@@ -86,30 +86,47 @@ CMakeFiles/websocket_client.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/websocket_client.dir/src/main.c.s"
 	D:\Devgame\cppw64dev\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\C\Ejer\src\main.c -o CMakeFiles\websocket_client.dir\src\main.c.s
 
+CMakeFiles/websocket_client.dir/src/websocket.c.obj: CMakeFiles/websocket_client.dir/flags.make
+CMakeFiles/websocket_client.dir/src/websocket.c.obj: CMakeFiles/websocket_client.dir/includes_C.rsp
+CMakeFiles/websocket_client.dir/src/websocket.c.obj: E:/C/Ejer/src/websocket.c
+CMakeFiles/websocket_client.dir/src/websocket.c.obj: CMakeFiles/websocket_client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\C\Ejer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/websocket_client.dir/src/websocket.c.obj"
+	D:\Devgame\cppw64dev\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/websocket_client.dir/src/websocket.c.obj -MF CMakeFiles\websocket_client.dir\src\websocket.c.obj.d -o CMakeFiles\websocket_client.dir\src\websocket.c.obj -c E:\C\Ejer\src\websocket.c
+
+CMakeFiles/websocket_client.dir/src/websocket.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/websocket_client.dir/src/websocket.c.i"
+	D:\Devgame\cppw64dev\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\C\Ejer\src\websocket.c > CMakeFiles\websocket_client.dir\src\websocket.c.i
+
+CMakeFiles/websocket_client.dir/src/websocket.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/websocket_client.dir/src/websocket.c.s"
+	D:\Devgame\cppw64dev\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\C\Ejer\src\websocket.c -o CMakeFiles\websocket_client.dir\src\websocket.c.s
+
 # Object files for target websocket_client
 websocket_client_OBJECTS = \
-"CMakeFiles/websocket_client.dir/src/main.c.obj"
+"CMakeFiles/websocket_client.dir/src/main.c.obj" \
+"CMakeFiles/websocket_client.dir/src/websocket.c.obj"
 
 # External object files for target websocket_client
 websocket_client_EXTERNAL_OBJECTS =
 
-websocket_client.exe: CMakeFiles/websocket_client.dir/src/main.c.obj
-websocket_client.exe: CMakeFiles/websocket_client.dir/build.make
-websocket_client.exe: E:/vcpkg/installed/x64-windows/debug/lib/websockets.lib
-websocket_client.exe: E:/vcpkg/installed/x64-windows/debug/lib/libssl.lib
-websocket_client.exe: E:/vcpkg/installed/x64-windows/debug/lib/libcrypto.lib
-websocket_client.exe: E:/vcpkg/installed/x64-windows/debug/lib/pthreadVC3d.lib
-websocket_client.exe: E:/vcpkg/installed/x64-windows/debug/lib/zlibd.lib
-websocket_client.exe: E:/vcpkg/installed/x64-windows/debug/lib/uv.lib
-websocket_client.exe: CMakeFiles/websocket_client.dir/linkLibs.rsp
-websocket_client.exe: CMakeFiles/websocket_client.dir/objects1.rsp
-websocket_client.exe: CMakeFiles/websocket_client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\C\Ejer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable websocket_client.exe"
+bin/websocket_client.exe: CMakeFiles/websocket_client.dir/src/main.c.obj
+bin/websocket_client.exe: CMakeFiles/websocket_client.dir/src/websocket.c.obj
+bin/websocket_client.exe: CMakeFiles/websocket_client.dir/build.make
+bin/websocket_client.exe: E:/vcpkg/installed/x64-windows/debug/lib/websockets.lib
+bin/websocket_client.exe: E:/vcpkg/installed/x64-windows/debug/lib/libssl.lib
+bin/websocket_client.exe: E:/vcpkg/installed/x64-windows/debug/lib/libcrypto.lib
+bin/websocket_client.exe: E:/vcpkg/installed/x64-windows/debug/lib/pthreadVC3d.lib
+bin/websocket_client.exe: E:/vcpkg/installed/x64-windows/debug/lib/zlibd.lib
+bin/websocket_client.exe: E:/vcpkg/installed/x64-windows/debug/lib/uv.lib
+bin/websocket_client.exe: CMakeFiles/websocket_client.dir/linkLibs.rsp
+bin/websocket_client.exe: CMakeFiles/websocket_client.dir/objects1.rsp
+bin/websocket_client.exe: CMakeFiles/websocket_client.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\C\Ejer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable bin\websocket_client.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\websocket_client.dir\link.txt --verbose=$(VERBOSE)
-	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file E:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/C/Ejer/build/websocket_client.exe -installedDir E:/vcpkg/installed/x64-windows/bin -OutVariable out
+	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file E:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/C/Ejer/build/bin/websocket_client.exe -installedDir E:/vcpkg/installed/x64-windows/bin -OutVariable out
 
 # Rule to build all files generated by this target.
-CMakeFiles/websocket_client.dir/build: websocket_client.exe
+CMakeFiles/websocket_client.dir/build: bin/websocket_client.exe
 .PHONY : CMakeFiles/websocket_client.dir/build
 
 CMakeFiles/websocket_client.dir/clean:

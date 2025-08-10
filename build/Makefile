@@ -152,6 +152,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\websocket_client.dir\build.make CMakeFiles/websocket_client.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/websocket.obj: src/websocket.c.obj
+.PHONY : src/websocket.obj
+
+# target to build an object file
+src/websocket.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\websocket_client.dir\build.make CMakeFiles/websocket_client.dir/src/websocket.c.obj
+.PHONY : src/websocket.c.obj
+
+src/websocket.i: src/websocket.c.i
+.PHONY : src/websocket.i
+
+# target to preprocess a source file
+src/websocket.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\websocket_client.dir\build.make CMakeFiles/websocket_client.dir/src/websocket.c.i
+.PHONY : src/websocket.c.i
+
+src/websocket.s: src/websocket.c.s
+.PHONY : src/websocket.s
+
+# target to generate assembly for a file
+src/websocket.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\websocket_client.dir\build.make CMakeFiles/websocket_client.dir/src/websocket.c.s
+.PHONY : src/websocket.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/websocket.obj
+	@echo ... src/websocket.i
+	@echo ... src/websocket.s
 .PHONY : help
 
 
