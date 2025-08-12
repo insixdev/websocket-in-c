@@ -1,4 +1,5 @@
-build/
+server/build/
+client/build/
+
 .vscode/
-.build/
-.bin/
+

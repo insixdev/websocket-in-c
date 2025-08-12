@@ -11,6 +11,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
+# Añadir la ruta a libwebsockets
+list(APPEND CMAKE_PREFIX_PATH "E:/vcpkg/buildtrees/libwebsockets/x64-windows-dbg")
+
 # ---
 # Configuración del proyecto
 # ---
@@ -26,7 +29,11 @@ find_package(libwebsockets CONFIG REQUIRED)
 
 message(STATUS "libwebsockets_INCLUDE_DIRS: ${libwebsockets_INCLUDE_DIRS}")
 #    Añade los directorios de inclusión de libwebsockets
-target_include_directories(websocket_client PRIVATE ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(websocket_client PRIVATE 
+    ${CMAKE_SOURCE_DIR}/include
+    ${libwebsockets_INCLUDE_DIRS}
+    "E:/vcpkg/buildtrees/libwebsockets/x64-windows-dbg/include"  # Ruta explícita
+)
 
 #    Vincula las bibliotecas necesarias al ejecutable
 target_link_libraries(websocket_client PRIVATE websockets_shared)

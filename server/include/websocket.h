@@ -3,11 +3,11 @@
 
 #include <libwebsockets.h>
 /*
-* @brief: thread que manejara los eventos de lws
+* @brief: funcion manejara los eventos de lws
 * @param arg: argumento
 * @return: NULL
 */
-void* mainWebsocket(void* arg);
+void mainWebsocket();
 /*
 * @brief: funcion que manejara los eventos de lws
 * @param wsi: puntero a la estructura lws

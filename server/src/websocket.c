@@ -8,17 +8,18 @@
 const struct lws_protocols protocol[] = {
     {
         "chat", // nombre del protocolo
-        lws_callback_http_dummy,
+        chat_callback, // callback que manejara los eventos de lws
         0, // datos per session
         0, // tamaño de los datos per session
     },
     { NULL, NULL, 0, 0 } /* terminator */
 };
-void* mainWebsocket(void* arg) {
+
+void mainWebsocket() {
     struct lws_context *context = getWebsocketContext();
     if (context == NULL){
         printf("Error al crear el contexto de lws\n");
-        return NULL;
+        
     }
     printf("Servidor websocket iniciado en el puerto 8090\n");
 
@@ -47,7 +48,8 @@ struct lws_context * getWebsocketContext() {
 
     if (context == NULL) {
         printf("Error al crear el contexto de lws\n");
-        return NULL;
+        exit(1);
+
     }
     
     return context;
