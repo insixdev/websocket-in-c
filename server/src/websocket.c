@@ -63,12 +63,17 @@ static int chat_callback(struct lws *wsi, enum lws_callback_reasons reason, void
             break;
         case LWS_CALLBACK_RECEIVE:
             // Manejar el mensaje recibido
+            printf("Mensaje recibido: %.*s\n", (int)len, (char *)in);
+
+            // Enviar el mensaje de vuelta al cliente
+            lws_write(wsi, (unsigned char *)in, len, LWS_WRITE_TEXT);
             break;
         case LWS_CALLBACK_SERVER_WRITEABLE:
-            // Manejar el mensaje recibido
+            // Manejar el envio de mensajes
             break;
         case LWS_CALLBACK_CLOSED:
-            // Manejar el mensaje recibido
+            // Manejar la cierre de la conexion
+
             break;
         default:
             break;
